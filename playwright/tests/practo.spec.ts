@@ -4,14 +4,11 @@ import {test, expect} from "@playwright/test";
 
 // To validate location selection functionality with valid data.
 // To validate test search functionality with valid search data.
-// To validate book via call functionality.
-// To validate book via WhatsApp functionality.
+
 // To validate add to cart functionality.
-// To validate removing from cart functionality.
 // To validate checkout functionality.
 // To validate checkout and details page.
 // To validate view description functionality.
-// To validate book now functionality in description page.
 // To verify whether the search bar is visible.
 
 
