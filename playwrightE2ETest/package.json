@@ -1,0 +1,25 @@
+{
+  "name": "playwrighte2etest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bdd:gen":"bddgen",
+    "test": "playwright test",
+    "bdd": "npm run bdd:gen && npm run test",
+    "bdd:sanity": "bddgen && playwright test --grep @sanity",
+    "bdd:regression" : "bddgen && playwright test --grep @regression",
+    "bdd:validUser" : "bddgen && playwright test --grep @validUser",
+    "bdd:lockedUser": "bddgen && playwright test --grep @lockedUser",
+    "bdd:invalidUser": "bddgen && playwright test --grep @invalidUser"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0",
+    "playwright-bdd": "^8.5.0"
+  }
+}

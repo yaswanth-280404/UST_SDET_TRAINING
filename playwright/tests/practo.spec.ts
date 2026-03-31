@@ -98,3 +98,19 @@ test("To validate location selection functionality with valid data.", async ({pa
 
     await expect(page.url()).toBe("https://www.practo.com/tests/thyroid-autoantibodies-blood/p?city=bangalore");
 })
+
+
+test("Cart visible or not.", async ({page}) => {
+    await page.goto("https://www.practo.com/tests?city=bangalore");
+
+    await page.locator("//div[@class='c-global-cart u-pointer']").click();
+
+    await expect.soft(page.locator("//div[@class='c-searchbar__cart-popover']")).toBeVisible();
+})
+
+
+// test("Hover over phone call option for description view" , async ({page})=> {
+//     await page.goto("https://www.practo.com/tests?city=bangalore");
+//     await page.locator("//div[@class='c-booking-buttons__call-wrapper']").hover();
+//     await expect.soft(page.locator("//div['c-booking-buttons__popup']")).toBeVisible();
+// })

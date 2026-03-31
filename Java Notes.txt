@@ -1,0 +1,475 @@
+Language.
+ASCII - American Standard Code for Information Interexchange
+0-255. Total 256 characters.
+
+
+Ventakasai
+
+VS
+
+
+A = 65 = 01000001
+a = 97 = 01100001
+
+B - Binary
+
+ASCII	128	64	32	16	8	4	2	1
+A=65	0	1	0	0	0	0	0	1
+a=97	0	1	1	0	0	0	0	1
+
+C Language [POP] [structure, pointer, Dynamic memory allocation]
+C++ [OOP] [virtual function, friend function, operator overloading] Partly Object Oriented
+
+What is Object Oriented Programming?
+-> Object Oriented Programming or OOP is a programming concept where everything is written inside a class and access by an object.
+-> In OOPs, we consider everything as an object.
+-> There are 4 major pillars of oops
+1) Data Abstraction
+2) Data Encapsulation
+3) Inheritance
+4) Polymorphism
+
+What is a class?
+-> Class is a word which is derived from the word "classification" which means to "classify".
+-> Class is a collection of member variables, methods, objects, etc.
+-> Class is a blueprint of the project.
+
+class Calls  // Adarsh
+{
+	audioCall()
+	videoCall()
+}
+class ScreenShare  // Shivam
+{
+	wholeScreen()
+	particularScreen()
+	whiteBoard()
+	accessControl()
+}
+class Chats  // Sandeep
+{
+	showParticipants()
+	chatWithAll()
+	chatPrivately()
+}
+class JioCopyCat // Ganesh
+{
+	Calls c = new Calls();
+	ScreenShare s = new ScreenShare();
+	Chats ch = new Chats();
+}
+
+What is an object?
+-> Object is an instance of a class
+-> Every Object has 4 characteristics:
+1) State	  : Attribute of an object is called as state of an object
+2) Behavior	  : Action and reaction of an object in terms of state changes is called behaviour 
+3) Identity	  : Unique value in an object is identity
+4) Responsibility : Role served by an object is called a responsibility of an object
+
+empid		: 101
+name		: Sai
+location	: Bangalore
+designation	: Manager
+
+What is Data Abstraction?
+-> Abstraction is a process of identifying the key aspects and ignoring the rest.
+
+Introduction - Adarsh
+1) Name
+2) Qualification
+3) Hobbies
+4) Projects
+5) Skills
+
+6) Girlfriends
+7) AT-KT
+8) Interviews Rejects
+
+What is Data Encapsulation?
+-> Wrapping the data into single unit and hiding the working of it is called as Data Encapsulation.
+
+What is Inheritance?
+-> Deriving the properties of base class to derived class is called as Inheritance.
+Parent -> Base Class or Super Class
+Child -> Derived Class or Sub Class
+
+What is Polymorphism?
+-> "Poly" is a greek word which means "many".
+-> "morph" is a greek word which means "forms".
+-> Polymorphism means many forms of a single name.
+
+Ganesh Communicate with Trainer
+-> Formal
+-> bit hesitation
+-> subject
+-> Scared
+
+Ganesh Communicate with Best Buddy Sai
+-> Informal
+-> No hesitation
+-> anything 
+-> Completely free
+-> Telegu
+
+What is Java? [James Gosling - 1995]
+-> is Object Oriented Programming Language.
+-> Low Level Language
+-> General purpose programming language
+-> Open source programming
+-> High performance
+-> used to develop complete application
+-> There are 3 types of Java:
+1) (J2SE)JSE : Java Standalone Edition -> It is used to create console or windows application
+2) (J2ME)JME : Java Micro Edition -> It is used to create mobile application
+3) (J2EE)JEE : Java Enterprise Edition -> It is used to web application
+
+What are the features of Java?
+1) Simple
+2) OOPs Concept
+3) Portable [WORA - Write Once Run Anywhere]
+4) Platform Independent [JVM is platform dependent]
+5) Robust
+6) Secure
+7) Architectural Netrul
+8) Multi-Threaded
+
+Task to write features of java in notebook [Task]
+-> When we divide the task in multiple elements, it is called as a process.
+-> When we divide the process in multiple elements, it is called as a Thread.
+-> Thread is a part of process.
+1) Reading from the board [Process]
+	-> Looking at the board [Thread]
+	-> Reading [Thread]
+	-> memorizing [Thread]
+2) Writing in a book [Process]
+	-> Writing [Thread]
+	-> Checking For spelling mistake{Thread]
+	-> Checking for grammer mistake [Thread]
+	-> Correcting the spelling mistake [Thread]
+	-> Correcting the grammer mistake [Thread]
+
+History of Java:
+Sun Lab
+Earlier Java was named as Oak Language.
+The coffee bean name as "Java" which is imported from bostin
+
+------------------------------------------------------------------------------------------
+WRITING A SIMPLE JAVA CODE:
+
+class SimpleJavaApplication
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Hello World");		
+	}
+}
+
+class
+-> To create to class in java, "class" keyword is used
+-> Syntax: class ClassName
+-> Naming Convension: First letter of each word should be capitalized while writing the name of the class.
+-> Eg: class SimpleJavaApplication
+
+Method
+-> To create a method, following syntax is used: access_modifier return_type nameOfMethod()
+-> Access Modifier is optional, if you don't write any access modifier, It will consider as "default" access modifier.
+-> Naming Convension: First word should be written in small letters and remaining words should have first letter as capital.
+-> Eg: public void dispEmployeeRecords()
+
+Access Modifier
+1) Public: Public Access modifier can be access within the class as well as outside the class.
+2) Private: Private Access modifier can be access within the class only.
+3) Protected: Protected Access modifier can be access within the class and outside only with inherited class
+4) default: 
+
+Main Method
+->public : Access Modifier, public access modifier is visible to everyone. It can be easily access by anyone. JVM can also access the public access modifier.
+->static : JVM calls the main method in static way(i.e: classname.methodname()), so main method is static so that JVM can easily call it without creating any object.
+->void   : returnType, Void data does not return any value.
+->main   : Name of the method.
+->String[] args : Java has Intepreter, String[] args allows java program to execute it line by line.
+
+Printing Statement Meaning:
+System 	  : It is class in Java, which is available in "java.lang" package.
+out	  : It is a static object of class java.io.PrintStream
+println() : It is a override method of class java.io.PrintStream
+
+To create project in Eclipse IDE
+Click on File -> New -> Project -> Java Project -> Give a name to project -> Select JRE -> Click Next Button -> If you are using Java 11 and above version then deselect create module-info.java checkbox -> Click Finish Button
+
+To create a class in Eclipse
+Right Click on src folder -> New -> Class -> Give a name to class -> Click Finish button
+
+---------------------------------------------------------------------------------------------
+Constructors
+-> Constructors are special methods which has same name as classname.
+-> No Return Type required for the constructor, not even void.
+-> Constructors are used to initilize variables and objects.
+-> A constructor is invoked(called) at the time of object creation.
+-> A Constructor without parameter is default constructor.
+-> Constructors can be Overloaded.
+-> When there is no constructor in program, JVM create a default consturctor.
+------------------------------------------------------------------------------------------
+"This" Keyword.
+-> "this" keyword refers to current object.
+-> It is used to call the constructor of same class as well as methods.
+-> It is used to chain the constructor.
+-> It is also used to remove shadowing of variables.
+------------------------------------------------------------------------------------------
+String Class
+-> One dimension array of characters is called as String.
+-> String is a class in java, which is available in java.lang Package
+-> String are immutable in java.
+-> We can create string by two ways in java:
+	1) String Literal
+	-> Any String which is created without using "new" keyword are consider as String Literal.
+	-> Eg: String name = "abc";
+	-> Whenever we create String Literal, JVM creates a Java String pool, if the data is same, it 
+	   shares the same pool, if data is different it creates another pool.
+	2) String Object
+	-> Any String which is creates using "new" keyword are consider as String Object
+	-> Eg: String name = new String("abc");
+-> To make string mutable, we use StringBuffer or StringBuilder Class
+
+StringBuffer & StringBuilder
+-> Both StringBuffer and StringBuilder is used to mutate the String.
+-> Methods of StringBuffer are Synchronized whereas Methods of StringBuilder are not synchronized.
+-> StringBuffer are Thread-safe whereas StringBuilder are not Thread-safe
+-> StringBuffer is slower in performance than StringBuilder whereas Stringbuilder is faster in performance than StringBuffer.
+-------------------------------------------------------------------------------------------
+Wrapper Class in Java
+-> Wrapper class in java is used to convert primitive type to object type and object type to primitive type.
+-> Whenever we convert primitive datatype to object, this process is called as autoboxing
+-> Whenever we convert object to primitive datatype, this process is called as autounboxing.
+----------------------------------------------------------------------------------------
+Object Class
+-> Object class is cosmic super class.
+-> Every class in java is by default extended to Object Class.
+-> There are different Methods of Object Class.
+	1) class getClass();
+	2) String toString();
+	3) boolean equals(Object o);
+	4) int hashCode();
+	5) void wait();
+	6) void notify();
+	7) void notifyAll();
+--------------------------------------------------------------------------------------
+Inheritance
+BASE CLASS -> SUPER CLASS -> PARENT CLASS
+DERVIRED CLASS -> SUB CLASS -> CHILD CLASS
+
+-> Deriving the property from base class to derived class is called as Inheritance.
+-> Inheritance follows "IS-A" relationship.
+-> We use "extends" keyword to inherit base class to dervied class
+-> While creating the object of sub class, we can access super as well as sub class.
+-> Constructor calling in inheritance is super -> sub
+-------------------------------------------------------------------------------------
+Polymorphism
+
+-> Polymorphism means "many forms". 
+-> There are 2 types of polymorphism:
+1) Method Overloading/Compile-Time Polymorphysm/Static Type Polymorphysm/Early Binding Polymorphysm
+-> Method Overloading is a type of Polymorphysm where the name of the method is same, but change in datatype or arguement of the methods.
+-> Method Overloading is achieved in same class.
+RULES OF METHOD OVERLOADING:
+1) No Of Arguements Passed
+2) Datatype of the Arguement
+3) Sequence in which they are passed
+
+2) Method Overriding/Run-Time Polymorphysm/Dynamic Type Polymorphysm/Late Binding Polymorphysm
+-> Method Overriding is a type of Polymorphysm where the name of method is same, with the same datatype, arguement and return type in base class as well as dervied class
+-> Method Overriding is achieved with the help of inheritance.
+RULES OF METHOD OVERRIDING:
+1) No of Arguements should be same in base class as well as Derived Class
+2) Datatype and Sequence should be same in base class as well as derived class
+3) return type should be same in base class as well as dervied class.
+-----------------------------------------------------------------------------------
+RTTI [RunTime Type Identification]
+-> Every object in java, have 2 reference. i.e: static reference & dynamic reference.
+-> Eg: MyDate d = new MyDate();
+	  | 		   |
+	static		dynamic
+-> Take an example, if i have a class which is performing inheritance.
+class Employee
+{
+...
+}
+class Manager extends Employee
+{
+...
+}
+
+Manager man = new Manager();
+Employee emp = new Employee();
+
+Employee emp = new Manager();  // Dynamic Binding
+-> We can say "emp" object have a static reference of class Employee & dynamic reference of class Manager
+-> Whenever we do dynamic binding, we can call all the methods of parent class and override methods of child class. So all non override methods of child class cannot be accessed.
+-> We can write Parent p = new Child(); but not Child c = new Parent();
+--------------------------------------------------------------------------------------
+Abstract Class
+-> Abstract class in java is used to achieve data abstraction.
+-> Abstract class consists of abstract as well as non abstract methods.
+-> To create an abstract class or methods, we use "abstract" keyword.
+-> abstract methods does not specify a body
+-> We cannot instiantiate object of abstract class.
+-> Using Abstract class, we can achieve 0% to 100% of data abstraction.
+
+-----------------------------------------------------------------------------------------------
+Interface
+-> Interface is similar like abstract class which is used to achieve data abstraction.
+-> An Interface is a contract based model between the producer and the consumer.
+-> To create an interface, "interface" keyword is used.
+-> All the methods of an interface are by default public and abstract.
+-> We cannot instiantiate object of an interface.
+-> An Interface achieves 100% of data abstraction.
+---------------------------------------------------------------------------------------------
+Exception Handling
+
+What is Exception?
+-> An error occured during the execution of the program is called as runtime error or exception.
+-> There are two types of Exception : 
+1) Checked Exception:
+Any exception which is occured due to system configuration are called as Checked Exception.
+Eg : FileNotFoundException is an checked exception.
+2) Unchecked Exception:
+Any exception which is occured due to programmer's mistake is called as Unchecked Exception.
+Eg : ArrayIndexOutOfBoundsException is an Unchecked Exception.
+
+What is Exception Handling?
+-> Exception Handling is a technique to handle the runtime error and give appropriate message to users.
+-> In Java, to handle runtime error or exception, we use try,catch block.
+-> TRY BLOCK :
+- Try Block contains the code which may have exception.
+- Try block executes the code assuming that there is no exception in the code.
+- If any exception occured, it sends it to catch block.
+-> CATCH BLOCK :
+- Catch block is used to handle the exception in the "try" block.
+- Catch block has a parameter of exception type class.
+-> FINALLY BLOCK
+- Finally block is execute after try or catch block.
+- It is used to deallocate the memory allocated in try block
+- Finally block will always execute.
+
+----------------------------------------------------------------------------------
+
+throw -> it is used to inilize(define) an exception
+throws -> It is used to declare an Exception
+
+throw -> It is written inside the method
+throws -> It is written outside the method after the method signature before the body
+
+throw -> We can change the message using throw keyword
+throws -> Only default message is printed using throws keyword
+
+throw -> We can throw only one exception at one time.
+throws -> Multiple exception can be thrown using throws keyword
+
+throw -> It only throws UnChecked Exception
+throws -> It throws checked as well as Unchecked Exception
+------------------------------------------------------------------------------------
+Regular Expression [RegEx]
+-> Regular Expression or Regex is an API to define a pattern for searching or manipulating String.
+-> In Java, Regex is provided in java.util.regex package.
+-> There are two important class to perform regex:
+	1) Matcher
+	2) Pattern
+------------------------------------------------------------------------------------
+Array
+-> Collection of similar type of data, or collection of similar datatype is called as an Array
+-> In Java, We can create array by 2 ways
+1) Array of Objects:
+- When we create an array using "new" keyword, It is called as Array of Objects.
+- Eg : int arr[] = new int[5];
+2) First Class Object:
+- When we create an arry without using "new" keyword, It is called as First Class Object
+- Eg : int arr = [];
+------------------------------------------------------------------------------------
+Data Structure
+
+Array		: Hide & Seek Biscuit
+structure	: Candies of different flavor
+pointer 	: Delivery Boy
+-------------------------------------------------------------------------------------
+Generics
+-> If the alogrithm of the program is same, but only change in type of data, we can use generics class or methods to specify the datatype at runtime.
+
+T - Type
+K - Key
+V - Value
+E - Element
+N - Number
+-------------------------------------------------------------------------------------
+Collections.
+-> Since the size of an array is fixed, we cannot reinitilize or allocate it at runtime.
+-> If the size of an array is 5 and we initilize 3 data, then the memory is wastage.
+-> If the size of an array is 5 and we initilize more than that of data, it says size is insufficient.
+-> Collection is a data structure in java.
+-> All the classes in collection allocates the memory dynamically.
+--------------------------------------------------------------------------------------
+What is File?
+-> File is a collection of data, stored in secondary storage devices like floppy disk, hard disk, etc.
+
+What is File Handling?
+-> File Handling is a technique to read or write a data in a file.
+
+Why File Handling?
+- We store data in variable.
+- storing data in variable will remain till the execution of the program
+- Once program is terminated, data from the variable is lost.
+- So if we need to store some data even after the termination of the program, we use file handling.
+
+In order to achieve file handling, there are 3 steps : 
+1) Opening a File
+2) Reading a File
+	OR
+2) Writing a File
+3) Closing a File
+
+In java, we can read or write files in different ways:
+1) Character Based
+-> FileWriter & FileReader
+
+2) Byte Based
+-> FileOutputStream & FileInputStream
+
+3) Data Based
+-> DataOutputStream & DataInputStream
+
+Serialization in Java
+-> Serialization is a process to maintain the state of an object.
+-> In order to achieve serialization in java, we use "serializable" or "externizable" interface.
+
+Deserialization in Java
+-> Deserialization is a process to read the serialize data from a file.
+
+class Employee
+{
+	private int empid;
+	private String name;
+	private String desig;
+	private double salary;
+}
+
+Employee emp = new Employee();
+----------------------------------------------------------------------------------------
+Junit
+-> Junit is a testing library which allows developer to perform unit testing.
+-> TDD [Test Driven Development]
+
+Features :
+1) Open Source
+2) Provides Annotations based codes.
+3) Provides Assertions to code.
+4) Provides Test Runners.
+5) Junits test allows you to write codes faster which increases quality.
+6) Junit is Simple
+
+
+
+
+
+
+
+
